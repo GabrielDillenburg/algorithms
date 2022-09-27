@@ -19,20 +19,13 @@ class Queue {
   enqueue (value) {
     const newNode = new Node(value)
     if (this.length === 0) {
-      this.first = newNode
+      this.first = newNode   
       this.last = newNode
     } else {
-
       this.last.next = newNode
-
-      console.log(this.last === this.first)
-
       this.last = newNode
-
-      console.log(this.first)
     }
     this.length++
-    // console.log(JSON.stringify(myStack, null, 4))
     return newNode
   }
 
@@ -40,18 +33,14 @@ class Queue {
     if (!this.first) {
       return null
     }
-
-    const holdingPointer = this.first
-    this.last = this.first.next
-    this.length--
-    
     if (this.length === 0) {
-      this.bottom = null
+      this.last = null
     }
-
+    const holdingPointer = this.first //if is necessary use this reference after dequeue
+    this.first = this.first.next
+    this.length--
     return this
   }
-
 }
 
 const myStack = new Queue()
@@ -59,3 +48,5 @@ const myStack = new Queue()
 myStack.enqueue('google')
 myStack.enqueue('amazon')
 myStack.enqueue('apple')
+myStack.dequeue()
+console.log(JSON.stringify(myStack))
