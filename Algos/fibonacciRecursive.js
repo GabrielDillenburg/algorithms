@@ -5,22 +5,11 @@
 
 
 function fiboRecursive (n) {
-  let index = n
-  let previous = 0
-  let med = 1
-  let fibo = med + previous
-  previous = med
-  med = fibo
-  
-
-
-  if (index === 1) {
-    return fibo
+  if (n < 2) {
+    return n
   }
-  
-  console.log(index)
-  
-  return fiboRecursive(n-1)
+    
+  return fiboRecursive(n-1) + fiboRecursive(n-2)
 }
 
 console.log('result', fiboRecursive(5))
