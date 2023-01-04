@@ -1,0 +1,22 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "data structures and algorithms",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielDillenburg/algorithms.git"
+  },
+  "author": "GabrielDillenburg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielDillenburg/algorithms/issues"
+  },
+  "homepage": "https://github.com/GabrielDillenburg/algorithms#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
