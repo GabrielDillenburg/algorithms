@@ -29,3 +29,27 @@ function findLargestThreeDistinctElements (arr) {
 }
 
 findLargestThreeDistinctElements([10, 4, 3, 50, 23, 90])
+
+
+// avg. case Time complexity = O(nLogn)
+
+function findLargestThreeDistinctElements2 (arr) {
+  arr.sort((a, b) => a - b)
+
+  let count = 1,  check = 0 
+
+  for (let i = 1; i < arr.length; i++) {
+    const el = arr[i];
+
+    if (count < 4) {
+      if (check != arr[arr.length - i]) {
+        check = arr[arr.length -i]
+        console.log('distinct largest numbers:' + check)
+        count++
+      }
+    }
+  }
+}
+
+findLargestThreeDistinctElements2([12, 45, 1, -1, 45, 54, 23, 5, 0, -10])
+
