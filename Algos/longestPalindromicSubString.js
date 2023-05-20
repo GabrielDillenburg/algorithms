@@ -2,6 +2,8 @@ const longestPalindrome = function(s) {
   let longest = '';
   const len = s.length;
 
+  // a a b b a
+
   for (let i = 0; i < len; i++) {
     // For each character, consider it as the center of a potential palindrome
 
