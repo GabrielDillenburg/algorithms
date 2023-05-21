@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/Algos/longestConsecutiveSequence.js"
+      "program": "${workspaceFolder}/Algos/removeElement.js"
     }
   ]
 }
