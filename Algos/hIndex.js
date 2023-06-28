@@ -16,4 +16,4 @@ var hIndex = function(citations) {
   return i
 };
 
-hIndex([1, 2])
+hIndex([3,6,5,0,1])
