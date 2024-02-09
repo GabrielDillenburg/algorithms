@@ -4,6 +4,7 @@ import (
 	"sort"
 )
 
+// kind of sorting, hashmap and two dimensons slices
 func groupAnagrams(strs []string) [][]string {
 	groupMap := make(map[string][]string)
 
